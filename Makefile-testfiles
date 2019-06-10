@@ -1,0 +1,37 @@
+default: all
+
+test_1.o: test_1.c
+	gcc -c test_1.c -o test_1.o
+test_2.o: test_2.c
+	gcc -c test_2.c -o test_2.o
+test_3.o: test_3.c
+	gcc -c test_3.c -o test_3.o
+test_4.o: test_4.c
+	gcc -c test_4.c -o test_4.o
+test_5.o: test_5.c
+	gcc -c test_5.c -o test_5.o
+test_6.o: test_6.c
+	gcc -c test_6.c -o test_6.o
+test_7.o: test_7.c
+	gcc -c test_7.c -o test_7.o
+test_8.o: test_8.c
+	gcc -c test_8.c -o test_8.o
+test_9.o: test_9.c
+	gcc -c test_9.c -o test_9.o
+test_10.o: test_10.c
+	gcc -c test_10.c -o test_10.o
+
+all: test_1.o test_2.o test_3.o test_4.o test_5.o test_6.o test_7.o test_8.o test_9.o test_10.o 
+	gcc test_1.o -o test_1
+	gcc test_2.o -o test_2
+	gcc test_3.o -o test_3
+	gcc test_4.o -o test_4
+	gcc test_5.o -o test_5
+	gcc test_6.o -o test_6
+	gcc test_7.o -o test_7
+	gcc test_8.o -o test_8
+	gcc test_9.o -o test_9
+	gcc test_10.o -o test_10
+clean:
+	-rm -f *.o
+
